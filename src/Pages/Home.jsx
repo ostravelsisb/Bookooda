@@ -1,11 +1,15 @@
 import React from 'react';
 import HeroSection from "../components/Hero/HeroSection";
+import TopDestinations from "../Components/Destinations/TopDestinations";
 
 
 const Home = () => {
     return (
         <div className="min-h-screen">
             <HeroSection />
+
+            {/* Top Destinations Section */}
+            <TopDestinations />
 
             {/* Additional sections can be added here */}
             <section className="py-20 bg-white">
