@@ -1,10 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { HiOutlineHome, HiOutlineSearch, HiOutlineCalendar, HiOutlineUserGroup } from 'react-icons/hi';
 import { HiOutlineSparkles } from 'react-icons/hi2';
 import { RiMenu4Line, RiCloseLine } from 'react-icons/ri';
 import { TbArrowUpRight } from 'react-icons/tb';
-
+import {
+    HiOutlineHome,
+    HiOutlineSearch,
+    HiOutlineUserGroup,
+    HiOutlinePhone,
+    HiOutlineSupport,
+    HiOutlineCalendar,
+    HiOutlineInformationCircle
+} from "react-icons/hi";
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -34,12 +41,46 @@ function Navbar() {
 
     const close = () => setIsOpen(false);
 
+
     const navLinks = [
-        { id: 'home', label: 'Home', href: '/', icon: <HiOutlineHome className="text-base" /> },
-        { id: 'search', label: 'Search', href: '#search', icon: <HiOutlineSearch className="text-base" /> },
-        { id: 'bookings', label: 'Bookings', href: '#bookings', icon: <HiOutlineCalendar className="text-base" /> },
-        { id: 'profiles', label: 'Profiles', href: '#profiles', icon: <HiOutlineUserGroup className="text-base" /> },
+        {
+            id: 'home',
+            label: 'Home',
+            href: '/',
+            icon: <HiOutlineHome className="text-base" />
+        },
+        {
+            id: 'search',
+            label: 'Search',
+            href: '#search',
+            icon: <HiOutlineSearch className="text-base" />
+        },
+        {
+            id: 'aboutus',
+            label: 'About Us',
+            href: '/about',
+            icon: <HiOutlineInformationCircle className="text-base" />
+        },
+        {
+            id: 'contactus',
+            label: 'Contact Us',
+            href: '#contactus',
+            icon: <HiOutlinePhone className="text-base" />
+        },
+        {
+            id: 'support',
+            label: 'Support',
+            href: '#support',
+            icon: <HiOutlineSupport className="text-base" />
+        },
+        {
+            id: 'bookings',
+            label: 'Bookings',
+            href: '#bookings',
+            icon: <HiOutlineCalendar className="text-base" />
+        },
     ];
+
 
     return (
         <nav
@@ -72,9 +113,9 @@ function Navbar() {
                     {/* ── Desktop Nav ── */}
                     <div className="hidden md:flex items-center gap-0.5 bg-gray-50 rounded-2xl px-1.5 py-1.5 border border-gray-100">
                         {navLinks.map((link) => (
-                            <a
+                            <Link
                                 key={link.id}
-                                href={link.href}
+                                to={link.href}
                                 onClick={() => setActiveLink(link.id)}
                                 className={`flex items-center gap-1.5 px-4 py-1.5 rounded-xl text-[14px] font-medium transition-all duration-200 whitespace-nowrap ${activeLink === link.id
                                     ? 'bg-white text-blue-600 shadow-sm shadow-gray-200 border border-gray-100'
@@ -83,7 +124,7 @@ function Navbar() {
                             >
                                 {link.icon}
                                 {link.label}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
@@ -133,9 +174,9 @@ function Navbar() {
                     {/* Mobile nav links */}
                     <div className="flex flex-col gap-1">
                         {navLinks.map((link) => (
-                            <a
+                            <Link
                                 key={link.id}
-                                href={link.href}
+                                to={link.href}
                                 onClick={() => { setActiveLink(link.id); close(); }}
                                 className={`flex items-center gap-3 px-4 py-3 rounded-2xl text-[15px] font-medium transition-all duration-200 ${activeLink === link.id
                                     ? 'bg-blue-50 text-blue-600 border border-blue-100'
@@ -153,7 +194,7 @@ function Navbar() {
                                 {activeLink === link.id && (
                                     <span className="ml-auto w-1.5 h-1.5 rounded-full bg-blue-500" />
                                 )}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 

@@ -8,7 +8,7 @@ const MiniNavBar = ({ activeOption, onOptionChange }) => {
         { id: "file-ready", label: "File Ready", icon: "📄" },
         { id: "apply-visa", label: "Apply Visa", icon: "🛂" },
         { id: "top-rated", label: "Top Rated", icon: "⭐" },
-        { id: "agents-near", label: "Near You", icon: "📍" },
+        { id: "insurence", label: "Insurence", icon: "🛡️" },
         { id: "book-flights", label: "Flights", icon: "✈️" },
         { id: "book-hotels", label: "Hotels", icon: "🏨" },
     ];

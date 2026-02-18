@@ -150,6 +150,10 @@ const AgentSignup = ({ onToggle }) => {
                         placeholder="Select agent type"
                     />
 
+                    <div className="bg-blue-50 p-3 rounded-lg text-sm text-blue-700 mb-4 animate-fadeIn">
+                        <p><strong>Pricing Note:</strong> Standard agents pay 10% commission. Work & Study consultants can qualify for a fixed fee/subscription model.</p>
+                    </div>
+
                     {agentType === 'individual' && (
                         <div className="space-y-4 animate-fadeIn">
                             <Input
