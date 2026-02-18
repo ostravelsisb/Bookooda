@@ -14,6 +14,7 @@ const Home = () => {
             {/* Top Destinations Section */}
             <TopDestinations />
 
+
             {/* How It Works Section */}
             <HowItWorks />
 
