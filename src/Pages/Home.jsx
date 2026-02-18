@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from "../Components/Hero/HeroSection";
+import HeroSection from "../components/Hero/HeroSection";
 import TopDestinations from "../Components/Destinations/TopDestinations";
 import HowItWorks from "../Components/Home/HowItWorks";
 import PlatformRules from "../Components/Home/PlatformRules";

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import MiniNavBar from './MiniNavBar';
-import SearchCard from './SearchCard';
+import MiniNavBar from '../Hero/MiniNavBar';
+import SearchCard from '../Hero/SearchCard';
 
 const HeroSection = () => {
     const [activeNavOption, setActiveNavOption] = useState('find-agent');
