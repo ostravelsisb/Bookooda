@@ -1,16 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import AboutHero from '../components/about/AboutHero';
-import OurMission from '../components/about/OurMission';
-import OurVision from '../components/about/OurVision';
-import WhyChooseUs from '../components/about/WhyChooseUs';
-import HowItWorks from '../components/about/HowItWorks';
-import ServicesOverview from '../components/about/ServicesOverview';
-import AgentMarketplace from '../components/about/AgentMarketplace';
-import TrustSafety from '../components/about/TrustSafety';
-import StatsSection from '../components/about/StatsSection';
-import Testimonials from '../components/about/Testimonials';
-import CallToAction from '../components/about/CallToAction';
+import AboutHero from '../Components/about/AboutHero';
+import OurMission from '../Components/about/OurMission';
+import OurVision from '../Components/about/OurVision';
+import WhyChooseUs from '../Components/about/WhyChooseUs';
+import HowItWorks from '../Components/about/HowItWorks';
+import ServicesOverview from '../Components/about/ServicesOverview';
+import AgentMarketplace from '../Components/about/AgentMarketplace';
+import TrustSafety from '../Components/about/TrustSafety';
+import StatsSection from '../Components/about/StatsSection';
+import Testimonials from '../Components/about/Testimonials';
+import CallToAction from '../Components/about/CallToAction';
 
 const About = () => {
     return (

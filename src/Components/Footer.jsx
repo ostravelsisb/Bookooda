@@ -205,7 +205,7 @@ const Footer = () => {
                             {/* Contact */}
                             <div className="space-y-2.5">
                                 <a
-                                    href="mailto:hello@bookooda.com"
+                                    href="mailto:info@bookooda.com"
                                     className="flex items-center gap-3 text-gray-400 hover:text-orange-400 transition-colors duration-200 text-[13px] group"
                                 >
                                     <span className="w-8 h-8 rounded-lg bg-gray-800 border border-gray-700 flex items-center justify-center group-hover:bg-orange-500/10 group-hover:border-orange-500/30 transition-all duration-200 flex-shrink-0">
