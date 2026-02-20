@@ -52,7 +52,7 @@ function Navbar() {
         {
             id: 'search',
             label: 'Search',
-            href: '#search',
+            href: '/search',
             icon: <HiOutlineSearch className="text-base" />
         },
         {
@@ -64,13 +64,13 @@ function Navbar() {
         {
             id: 'contactus',
             label: 'Contact Us',
-            href: '#contactus',
+            href: '/contact',
             icon: <HiOutlinePhone className="text-base" />
         },
         {
             id: 'support',
             label: 'Support',
-            href: '#support',
+            href: '/support',
             icon: <HiOutlineSupport className="text-base" />
         },
         {

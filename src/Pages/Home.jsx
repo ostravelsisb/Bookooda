@@ -5,6 +5,7 @@ import HowItWorks from "../Components/Home/HowItWorks";
 import PlatformRules from "../Components/Home/PlatformRules";
 
 
+
 const Home = () => {
     return (
         <div className="min-h-screen">
@@ -12,7 +13,7 @@ const Home = () => {
             <HeroSection />
 
             {/* Top Destinations Section */}
-            <TopDestinations />
+
 
 
             {/* How It Works Section */}
