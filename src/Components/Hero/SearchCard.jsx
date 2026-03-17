@@ -37,7 +37,7 @@ const SearchCard = ({ activeNavOption = 'find-agent' }) => {
         const titles = {
             'find-agent': 'Find Your Perfect Travel Agent',
             'file-ready': 'Quick Visa File Processing',
-            'apply-visa': 'Apply for Your Visa Online',
+            'apply-visa': 'Apply for  Visa Online',
             'book-flights': 'Book Your World-Class Flight',
             'book-hotels': 'Book Your Premium Stay',
             'rent-a-car': 'Rent a Car for Your Journey',
